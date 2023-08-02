@@ -1,5 +1,7 @@
 List to track all created functions. Use format "Function Name(arguments): Function Description"
 (if anyone has a better way to format this go ahead and change it thats just the first thing I thought of)
+(if you think of a good function but don't know how to make it in code still write it down in this list and can go back to it later or can try
+to figure it out as a group)
 
 Example:
 CtoF(double temp): Function to take in a celcius temperature and return the temperature converted to fahrenheit
