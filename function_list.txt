@@ -4,4 +4,4 @@ List to track all created functions. Use format "Function_Type Function_Name(arg
 to figure it out as a group)
 
 Example:
-int CtoF(double temp): Function to take in a celcius temperature and return the temperature converted to fahrenheit
+double CtoF(double temp): Function to take in a celcius temperature and return the temperature converted to fahrenheit
