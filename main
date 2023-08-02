@@ -1,0 +1,7 @@
+//main program for arduino controller
+
+void setup() {
+}
+
+void loop(){
+}
