@@ -1,0 +1,5 @@
+List to track all created functions. Use format "Function Name(arguments): Function Description"
+(if anyone has a better way to format this go ahead and change it thats just the first thing I thought of)
+
+Example:
+CtoF(int temp): Function to take in a celcius temperature and return the temperature converted to fahrenheit
