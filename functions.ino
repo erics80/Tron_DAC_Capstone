@@ -1,7 +1,3 @@
-#include <math.h> //for standard math functions
-#include <LiquidCrystal.h> //For easy use of LCD display
-#include <Wire.h> //for I2C reading
-
 //write any useful functions that we can use here
 
 //Example
