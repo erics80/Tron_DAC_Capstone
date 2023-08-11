@@ -1,8 +1,7 @@
 #include <math.h> //for standard math functions
 #include <LiquidCrystal.h> //For easy use of LCD display
 #include <Wire.h> //for I2C reading
-
-#INCLUDE "pin_numbers_main.h"
+#include "pin_numbers_main.h"
 //main program for arduino controller
 
 void setup() {
