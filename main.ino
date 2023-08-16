@@ -1,10 +1,12 @@
 #include <math.h> //for standard math functions
 #include <LiquidCrystal.h> //For easy use of LCD display
 #include <Wire.h> //for I2C reading
-#include "pin_numbers.h"
+#include "pin_numbers.h" //header to define all pin numbers
 //main program for arduino controller
 
 void setup() {
+  Wire.begin(); //Start the Wire Library
+  Serial.begin(9600); //Start the Serial Monitor at 9600 baud
   analogReadResolution(12); //changing the ADC resolution to 12 bits. ES
   analogWriteResolution(12); //changing the PWM output resolution to 12 bits. ES
 }
