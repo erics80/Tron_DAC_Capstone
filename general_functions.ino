@@ -12,13 +12,12 @@ double CtoF(double Ctemp){
 
 
 //Returns the average of values in the array
-double avg(double values[]){
+double avg(double values[], int arraySize){
   double sum;
-  int arraySize = sizeof(Values)/sizeof(double);
   for(int i = 0; i < arraySize; i++){
     sum += values[i];
 }
-  double avg = sum/arraySize;
+  double avg = sum/double(arraySize);
   return avg;
 }
 
