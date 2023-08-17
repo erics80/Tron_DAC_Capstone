@@ -8,7 +8,7 @@ double temp;
   rt = r1 * (4095.00/analogRead(pin)-1.00);
   temp += (1/((1/298.15)+(1/beta) * log(rt/r0)))-273.15;
     
-  } else if(pin == 4095){
+  } else if(analogRead(pin) == 4095){
   rt = r1 * (4095.00/4094-1.00);
   temp += (1/((1/298.15)+(1/beta) * log(rt/r0)))-273.15;
   }else { //divide by 0 case
@@ -25,9 +25,9 @@ double temp;
   double rt;
   double r0 = 10000;
   double r1 = 10000;
-  int t1 = 25+273.15;
-  int t2 = 50+273.15;
-  int t3 = 100+273.15;
+  double t1 = 25+273.15;
+  double t2 = 50+273.15;
+  double t3 = 100+273.15;
   double res_50b;
   double res_100b;
   double L1;
@@ -59,15 +59,19 @@ double temp;
   B = X2-C*(L1*L1+L1*L2+L2*L2);
   A = Y1-L1*(B+C*L1*L1);
 
-  for(int i = 0; i < 5; i++){
-  if((double)analogRead(pin) != 0){
-  rt = r1 * (4095.00/(double)analogRead(pin))- 1.00;
-  temp += 1/(A+B*log(rt)+C*(log(rt)*log(rt)*log(rt)))-273.15
+for(int i = 0; i < 5; i++){
+  if(analogRead(pin) != 0 && analogRead(pin) != 4095){
+  rt = r1 * (4095.00/analogRead(pin)-1.00);
+  temp += 1/(A+B*log(rt)+C*(log(rt)*log(rt)*log(rt)))-273.15;
+
     
-  } else { //divide by 0 case
+  } else if(analogRead(pin) == 4095){
+  rt = r1 * (4095.00/4094-1.00);
+  temp += 1/(A+B*log(rt)+C*(log(rt)*log(rt)*log(rt)))-273.15;
+  }else { //divide by 0 case
     
-  rt = r1 * (4095.00/1.00)- 1.00;
-  temp += 1/(A+B*log(rt)+C*(log(rt)*log(rt)*log(rt)))-273.15
+  rt = r1 * (4095.00/1-1.00);
+  temp += 1/(A+B*log(rt)+C*(log(rt)*log(rt)*log(rt)))-273.15;
   }
   }
   return temp/5.00;
