@@ -5,8 +5,8 @@
 //main program for arduino controller
 
 void setup() {
-  Wire.begin(); //Start the Wire Library
-  Serial.begin(9600); //Start the Serial Monitor at 9600 baud
+  Wire.begin(); //Start the Wire Library. ES
+  Serial.begin(9600); //Start the Serial Monitor at 9600 baud. ES
   analogReadResolution(12); //changing the ADC resolution to 12 bits. ES
   analogWriteResolution(12); //changing the PWM output resolution to 12 bits. ES
 }
