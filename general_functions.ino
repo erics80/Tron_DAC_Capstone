@@ -3,7 +3,7 @@
 //Example
 //Takes in a temperature in Celsius and converts it to Fahrenheit
 double CtoF(double Ctemp){
-  Ftemp = temp*9/5 + 32;
+  double Ftemp = temp*9/5 + 32;
   return Ftemp;
 }
 
