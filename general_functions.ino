@@ -7,8 +7,6 @@ double CtoF(double Ctemp){
   return Ftemp;
 }
 
-//Takes in a pin number, sensor beta value, nominal resistance, and known resistor value (voltage divider) 
-//and outputs the temperature of the thermistor reading in Celsius (takes 5 readings)
 
 
 //Returns the average of values in the array
