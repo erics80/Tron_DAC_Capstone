@@ -1,13 +1,5 @@
 //write any useful functions that we can use here
 
-//Example
-//Takes in a temperature in Celsius and converts it to Fahrenheit
-double CtoF(double Ctemp){
-  double Ftemp = Ctemp*9/5 + 32;
-  return Ftemp;
-}
-
-
 
 //Returns the average of values in the array
 double avg(double values[], int arraySize){
