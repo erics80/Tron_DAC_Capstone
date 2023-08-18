@@ -1,8 +1,8 @@
 double simpleThermistorRead(int pin, double beta){
 double temp;
   double rt;
-  double r0 = 10000;
-  double r1 = 10000;
+  uint16_t r0 = 10000;
+  uint16_t r1 = 10000;
   for(int i = 0; i < 5; i++){
   if(analogRead(pin) != 0 && analogRead(pin) != 4095){
   rt = r1 * (4095.00/analogRead(pin)-1.00);
@@ -23,11 +23,11 @@ double temp;
 double thermistorRead(int pin, int B25_50, int B25_100){
 double temp;
   double rt;
-  double r0 = 10000;
-  double r1 = 10000;
-  double t1 = 25+273.15;
-  double t2 = 50+273.15;
-  double t3 = 100+273.15;
+  uint16_t r0 = 10000;
+  uint16_t r1 = 10000;
+  float t1 = 25+273.15;
+  float t2 = 50+273.15;
+  float t3 = 100+273.15;
   double res_50b;
   double res_100b;
   double L1;
