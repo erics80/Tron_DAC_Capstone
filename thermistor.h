@@ -3,12 +3,13 @@
 
 struct thermistor{
 int pin;
-int beta;
+double beta;
 int B25_50;
 int B25_100;
 };
 
-double simpleThermistorRead(int pin, double beta);
-double thermistorRead(int pin, int B25_50, int B25_100);
+void setThermistor(thermistor th, int pin, double beta, int B50, int B100);
+double simpleThermistorRead(thermistor th);
+double thermistorRead(thermistor th);
 
 #endif
