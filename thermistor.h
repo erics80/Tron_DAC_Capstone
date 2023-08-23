@@ -4,8 +4,8 @@
 struct thermistor{
 int pin;
 double beta;
-int B25_50;
-int B25_100;
+int B50;
+int B00;
 };
 
 void setThermistor(thermistor th, int pin, double beta, int B50, int B100);
