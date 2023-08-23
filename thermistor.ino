@@ -6,7 +6,7 @@ void setThermistor(thermistor th, int pin, double beta, int B50, int B100){
 }
 
 double simpleThermistorRead(thermistor th){
-double temp;
+  double temp;
   double rt;
   double reading;
   uint16_t r0 = 10000;
@@ -28,7 +28,7 @@ double temp;
 }
 
 double thermistorRead(thermistor th){
-double temp;
+  double temp;
   double rt;
   uint16_t reading;
   uint16_t r0 = 10000;
