@@ -20,3 +20,9 @@ double smoothRead(int pin){
   double reading = sum/5;
   return reading
 }
+
+//Changes the ADC and DAC Resolution. Takes in an integer which will be the resolution in bits 
+void analogResolution(int res){
+  analogReadResolution(res); //changing the ADC resolution to 12 bits. 
+  analogWriteResolution(res); //changing the PWM output resolution to 12 bits.
+}
