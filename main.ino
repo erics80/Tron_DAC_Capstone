@@ -2,6 +2,10 @@
 #include <LiquidCrystal.h> //For easy use of LCD display
 #include <Wire.h> //for I2C reading
 #include "pin_numbers.h" //header to define all pin numbers
+#include "general_functions.h"
+#include "thermistor.h"
+#include "pressure_sensor.h"
+#include "CO2_Sensor.h"
 //main program for arduino controller
 
 void setup() {
