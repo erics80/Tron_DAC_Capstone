@@ -3,5 +3,6 @@
 
 double avg(double values[], int arraySize);
 double smoothRead(int pin);
+void analogResolution(int res);
 
 #endif
