@@ -1,4 +1,4 @@
-void setThermistor(thermistor th, int pin, double beta, int B50, int B100){
+void setThermistor(thermistor &th, int pin, double beta, int B50, int B100){
   th.pin = pin;
   th.beta = beta
   th.B50 = B50;
