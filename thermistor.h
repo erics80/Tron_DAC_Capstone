@@ -8,7 +8,7 @@ int B50;
 int B00;
 };
 
-void setThermistor(thermistor th, int pin, double beta, int B50, int B100);
+void setThermistor(thermistor &th, int pin, double beta, int B50, int B100);
 double simpleThermistorRead(thermistor th);
 double thermistorRead(thermistor th);
 
