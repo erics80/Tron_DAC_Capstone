@@ -1,15 +1,15 @@
 #ifndef THERMISTOR_H
 #define THERMISTOR_H
 
-struct thermistor{
+class thermistor{
+public:
 int pin;
 double beta;
 int B50;
 int B00;
+void setThermistor(int pin, double beta, int B50, int B100);
+double simpleThermistorRead();
+double thermistorRead();
 };
-
-void setThermistor(thermistor &th, int pin, double beta, int B50, int B100);
-double simpleThermistorRead(thermistor th);
-double thermistorRead(thermistor th);
 
 #endif
