@@ -1,11 +1,9 @@
-void thermistor::setThermistor(int pin, double beta, int B50, int B100){
+void thermistor::setThermistor(int pin, double beta){
   t_pin = pin;
   t_beta = beta;
-  t_B50 = B50;
-  t_B100 = B100;
 }
 
-double thermistor::simpleThermistorRead(){
+double thermistor::thermistorRead(){
   double temp;
   double rt;
   double reading;
@@ -27,6 +25,8 @@ double thermistor::simpleThermistorRead(){
   return temp/5.00;
 }
 
+
+/*
 double thermistor::thermistorRead(){
   double temp;
   double rt;
@@ -61,4 +61,5 @@ for(int i = 0; i < 5; i++){
   }
   return temp/5.00;
 }
+*/
 
