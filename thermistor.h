@@ -4,8 +4,8 @@
 class Thermistor{
 
 private:
-int t_pin;
-double t_beta;
+int _pin;
+double _beta;
 
 public:
 void setThermistor(int pin, double beta);
