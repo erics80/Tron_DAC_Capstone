@@ -33,9 +33,9 @@ double Thermistor::thermistorRead(){
   uint16_t reading;
   uint16_t r0 = 10000;
   uint16_t r1 = 10000;
-  float t1 = 25+273.15;
-  float t2 = 50+273.15;
-  float t3 = 100+273.15;
+  float t1 = 298.15f;
+  float t2 = 323.15f;
+  float t3 = 373.15f;
   double A;
   double B;
   double C;
