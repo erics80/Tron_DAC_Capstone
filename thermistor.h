@@ -1,7 +1,7 @@
 #ifndef THERMISTOR_H
 #define THERMISTOR_H
 
-class thermistor{
+class Thermistor{
 
 private:
 int t_pin;
