@@ -1,9 +1,9 @@
-void thermistor::setThermistor(int pin, double beta){
+void Thermistor::setThermistor(int pin, double beta){
   t_pin = pin;
   t_beta = beta;
 }
 
-double thermistor::thermistorRead(){
+double Thermistor::thermistorRead(){
   double temp;
   double rt;
   double reading;
@@ -27,7 +27,7 @@ double thermistor::thermistorRead(){
 
 
 /*
-double thermistor::thermistorRead(){
+double Thermistor::thermistorRead(){
   double temp;
   double rt;
   uint16_t reading;
