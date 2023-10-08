@@ -1,4 +1,4 @@
-void Thermistor::setThermistor(int pin, double beta){
+void Thermistor::Thermistor(int[] pin, double[] beta){
   _pin = pin;
   _beta = beta;
 }
