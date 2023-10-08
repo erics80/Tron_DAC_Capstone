@@ -4,8 +4,8 @@
 class Thermistor{
 
 private:
-int[] _pin;
-double[] _beta;
+int* pin;
+double* beta;
 
 public:
 Thermistor(int pin[], double beta[]);
