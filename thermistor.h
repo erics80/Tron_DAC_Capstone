@@ -4,11 +4,11 @@
 class Thermistor{
 
 private:
-int _pin;
-double _beta;
+int[] _pin;
+double[] _beta;
 
 public:
-void setThermistor(int pin, double beta);
+Thermistor(int pin[], double beta[]);
 double thermistorRead();
 };
 
