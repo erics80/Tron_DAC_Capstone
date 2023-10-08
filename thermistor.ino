@@ -1,6 +1,6 @@
 void Thermistor::Thermistor(int[] pin, double[] beta){
-  _pin = pin;
-  _beta = beta;
+  this->pin = pin;
+  this->beta = beta;
 }
 
 float Thermistor::thermistorRead(){
